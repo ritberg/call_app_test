@@ -63,4 +63,4 @@ wss.on("connection", (ws) => {
   });
 });
 
-console.log("Server running on ws://localhost:3001");
+console.log("Server running on port", PORT);

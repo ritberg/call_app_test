@@ -7,7 +7,7 @@ export default function App() {
 
   const start = async () => {
     // Connect WebSocket
-    ws.current = new WebSocket("ws://localhost:3001");
+    ws.current = new WebSocket("ws://localhost:wss://call-app-test.onrender.com");
 
     // Get microphone
     localStream.current = await navigator.mediaDevices.getUserMedia({ audio: true });
