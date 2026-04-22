@@ -23,7 +23,11 @@ wss.on("connection", (ws) => {
 console.log("WebSocket server running on ws://localhost:3001");*/
 
 const WebSocket = require("ws");
-const wss = new WebSocket.Server({ port: 3001 });
+const PORT = process.env.PORT || 3001;
+
+const wss = new WebSocket.Server({ port: PORT });
+
+console.log("Server running on port", PORT);
 
 const rooms = {};
 
