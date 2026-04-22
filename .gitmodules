@@ -1,0 +1,3 @@
+[submodule "call-app"]
+	path = call-app
+	url = https://github.com/ritberg/call_app_test.git
